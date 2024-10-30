@@ -39,7 +39,7 @@ function Profile(){
                                     </a>
                                 </li>
                                 <li >
-                                    <a className="profile__github" href="https://github.com/duongnoob23/JAVA"
+                                    <a className="profile__github" href="https://github.com/duongnoob23"
                                     target='blank'>
                                         <i class="fa-brands fa-github"></i>
                                     </a>
@@ -48,13 +48,19 @@ function Profile(){
                             <div className="profile__social2">
                                 <div className="profile__git">
                                     <label>Github</label>
-                                    <input type="text" value={`https://github.com/duongnoob23/JAVA`}>
+                                    
+                                    <a href="https://github.com/duongnoob23/IOT_thay_Uy" target='blank'>
+                                         <input type="text" value={`https://github.com/duongnoob23/IOT_thay_Uy`}>
                                         
                                     </input>
+                                    </a>
                                 </div>
                                 <div className="profile__api">
                                     <label >Apidoc</label>
-                                    <input type="text" value={`https://www.postman.com/shoes2/workspace/duong/documentation/33791139-d7606283-f860-4bd0-b2b1-88a789243463`} />
+                                    {/* <input type="text" value={`https://www.postman.com/shoes2/workspace/duong/documentation/33791139-d7606283-f860-4bd0-b2b1-88a789243463`} /> */}
+                                    <a href="https://www.postman.com/shoes2/workspace/duong/documentation/33791139-d7606283-f860-4bd0-b2b1-88a789243463" target='blank'>
+                                        <input type="text" value={`https://www.postman.com/shoes2/workspace/duong/documentation/33791139-d7606283-f860-4bd0-b2b1-88a789243463`} />
+                                    </a>
                                 </div>
                             </div>
                         </div>
