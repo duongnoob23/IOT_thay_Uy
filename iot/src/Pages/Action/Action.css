@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/* .table__container{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.table{
+    width: 100%;
+}
+
+.table__head .table__head-item th{
+    background-color: #7A40F2;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.table__body .table__body-item td{
+    background-color: white;
+    color: black;
+    padding: 20px;
+} */
+.table {
+    width: calc(100% - 50px);
+    border-collapse: collapse;
+    margin: 5px;
+    border-radius:10px;
+    padding: 20px;
+}
+
+.table__container{
+    max-height: 1000px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    /* overflow-x: hidden; */
+}
+.action{
+    border:5px solid #7A40F2;
+    border-radius: 0 5px 5px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table__body{
+    border-radius: 10px;
+    border: 2px solid #7A40F2;
+}
+
+.table__head{
+    border: 2px solid #7A40F2;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #7A40F2;
+    color: white;
+}
+.table-row__head{
+    height: 40px;
+}
+.table-row__body{
+    transition: all 0.1s linear;
+    height: 45px;
+
+}
+.table-row__body:nth-child(even){
+    background-color: #eee;
+    
+}
+.table-row__body:hover{
+    background-color: #7A40F2;
+    color: #F4C427;
+    
+}
+
+.table-row__body:active{
+    background-color: #7A40F2;
+    color: #F4C427;
+}
+
+.table-row__item{
+    cursor: pointer;
+}
+.action-title{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.action-sort{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+/* <div className="option">
+    <div className="search">
+        <input type="text" placeholder="search" className="search__input"></input>
+        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+    </div>
+    <div className="select">
+        <select className="select__list" >
+            <option className="select__option1">Temperature</option>
+            <option className="select__option2">Humidity</option>
+            <option className="select__option3">Light</option>
+        </select>
+    </div>
+</div> */
+
+.option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search__input{
+    padding: 5px 10px;
+    border-radius: 8px;
+    outline: none;
+    border:1px solid #7A40F2;
+    margin-right: 5px;
+}
+.search__icon{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color:#7A40F2;
+}
+
+.select{
+    margin-right: 20px;
+    margin-left: auto;
+   
+}
+
+.select__list{
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #7A40F2;
+    outline: none;
+}
+
+.select2{
+    margin-right: 40px;
+}
+
+.pagination{
+    padding: 10px 0;
+    margin-right: 20px;
+   margin-top: auto;
+}
+
+.pagi__list{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 15px;
+}
+
+.pagi__item{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.pagi__next,.pagi__pre{
+    color: blue;
+}
+.pagi__cur{
+    font-size: 20;
+    border-radius: 5px;
+    border:1px solid black;
+    padding: 5px;
+    
+}
+
+
